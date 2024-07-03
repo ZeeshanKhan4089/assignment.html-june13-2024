@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            color: cadetblue;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        div{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #pass,
+        #name{
+            width: 250px;
+            height: 30px;
+            border-radius: 5px;
+            outline: none;
+
+        }
+
+        #border{
+            border: 1px solid cadetblue ;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            height: 300px;
+            border-radius: 7px;        
+        }
+        #btn{
+            background-color: rgb(160, 188, 190);
+            border: none;
+            cursor: pointer;
+            width: 250px;
+            height: 30px;
+            border-radius: 5px;
+            transition-duration: 0.6s;
+        }
+
+        #btn:hover,
+        #btn:active{
+            background-color: cadetblue;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.336);
+       }
+
+        
+    </style>
+</head>
+<body>
+
+<div id="border">
+    <h1>Login Form</h1>
+
+<form action="next.html" method="post">
+
+<div>
+    <input 
+    name="username" 
+    type="text" 
+    placeholder="Username" 
+    required id="name">
+</div>
+<div>
+    <input 
+    name="passcode" 
+    type="password" 
+    placeholder="password" 
+    required id="pass">
+</div>
+<div>
+    <input 
+    type="radio" 
+    name="gender" 
+    id="m">
+
+<label for="m">male</label>
+
+    <input 
+    type="radio" 
+    name="gender" 
+    id="f">
+
+<label for="f">female</label>
+</div>
+
+<div>
+    <input 
+    type="submit" 
+    value="Login" 
+    id="btn">
+</div>
+
+</div>
+
+</form>
+</body>
+</html>
