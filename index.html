@@ -4,40 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      div {
-        margin: 20px 25%;
-        padding: 50px;
-        background-color: blue;
-        height: 300px;
-        width: 50%;
-        border: 2px solid black;
-        flex-direction: row;
-        display: flex;
-        justify-content: space-around;
-      }
-
-      span {
-        border: 2px solid black;
-        background-color: brown;
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-      }
-    </style>
   </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    .section-1,
+    .section-2 {
+      height: 100vh;
+      width: 50%;
+      /* border: 2px solid rgb(107, 90, 255); */
+    }
+    .section-1 {
+      background-image: url("https://picsum.photos/5000");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    main {
+      display: flex;
+    }
+    .sticky {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* border: 1px solid black; */
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.473);
+      height: 100px;
+      width: 40px;
+      margin-top: 100px;
+      border-radius: 0 20px 0 0;
+    }
+    .sticky a {
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: rgb(69, 69, 248);
+    }
+
+    .section-2 {
+      display: flex;
+    }
+    .logo-containt {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .btn-1,
+    .btn-2 {
+      display: inline-block;
+      text-decoration: none;
+      font-size: larger;
+      text-align: center;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.473);
+      padding-top: 5px;
+      margin: 0 10px;
+    }
+
+    h1 {
+      padding: 20px;
+    }
+
+    .btn-1 {
+      border: 2px solid rgb(69, 69, 248);
+      width: 120px;
+      height: 35px;
+      border-radius: 5px;
+    }
+    .btn-2 {
+      border: 2px solid rgb(69, 69, 248);
+      background-color: rgb(69, 69, 248);
+      color: white;
+      width: 120px;
+      height: 35px;
+      border-radius: 5px;
+    }
+  </style>
   <body>
-    <div>
-      <span>box 1</span>
-      <span>box 2</span>
-      <span>box 3</span>
-      <span>box 4</span>
-      <span>box 5</span>
-      <span>box 6</span>
-    </div>
+    <main>
+      <div class="section-1"></div>
+      <div class="section-2">
+        <section class="sticky">
+          <a href="#">f</a>
+          <a href="#">in</a>
+        </section>
+        <section class="logo-containt">
+          <img src="codepro_logo.png" alt="img" width="300px" />
+          <h1>Comming Soon!</h1>
+          <div>
+            <a class="btn-1" href="#"> Join Now</a>
+            <a class="btn-2" href="#"> Learn more!</a>
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
